@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: report.xml
+ * Purpose: XML file for storing historical sales reports of sold and failed auction items.
+ * Structure: Contains item elements that have been processed and reported.
+ * Note: This file is currently empty as no items have been reported yet.
+ *       It will be populated when "Generate Report" is used on sold/failed items.
+ */
+-->
+<items/>
