@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: auction.xml
+ * Purpose: XML database storing all auction items for ShopOnline system.
+ * Structure: Contains multiple item elements with detailed auction information.
+ */
+-->
+<items>
+  <!-- Auction Item 1: Macbook Pro M3 -->
+  <item>
+    <itemNumber>I1761292158</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>Macbook Pro M3</name>
+    <category>Electronics</category>
+    <description>Macbook pro m3 chip 14 inches 2025</description>
+    <startPrice>1900.00</startPrice>
+    <reservePrice>2100.00</reservePrice>
+    <buyItNowPrice>2400.00</buyItNowPrice>
+    <duration>7</duration>
+    <startDate>2025-10-24</startDate>
+    <startTime>18:49:18</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID>C1760679609</bidderID>
+      <price>2200.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 2: Printer -->
+  <item>
+    <itemNumber>I1761292230</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>Printer</name>
+    <category>Electronics</category>
+    <description>Printer officework 2025 model</description>
+    <startPrice>2500.00</startPrice>
+    <reservePrice>2800.00</reservePrice>
+    <buyItNowPrice>3000.00</buyItNowPrice>
+    <duration>8</duration>
+    <startDate>2025-10-24</startDate>
+    <startTime>18:50:30</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID>C1760159668</bidderID>
+      <price>2600.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 3: Queen bed -->
+  <item>
+    <itemNumber>I1761389281</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>Queen bed 5mx7m</name>
+    <category>Home</category>
+    <description>Queen bed 5mx7m very suitable for couple</description>
+    <startPrice>200.00</startPrice>
+    <reservePrice>300.00</reservePrice>
+    <buyItNowPrice>400.00</buyItNowPrice>
+    <duration>30</duration>
+    <startDate>2025-10-25</startDate>
+    <startTime>21:48:01</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID/>
+      <price>200.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 4: MacBook Pro M4 -->
+  <item>
+    <itemNumber>I1761389333</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>MacBook Pro M4 chip 2025</name>
+    <category>Electronics</category>
+    <description>MacBook Pro M4 chip 2025 brand new</description>
+    <startPrice>2200.00</startPrice>
+    <reservePrice>2400.00</reservePrice>
+    <buyItNowPrice>2600.00</buyItNowPrice>
+    <duration>30</duration>
+    <startDate>2025-10-25</startDate>
+    <startTime>21:48:53</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID/>
+      <price>2200.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 5: iPhone 15 Promax -->
+  <item>
+    <itemNumber>I1761389400</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>iPhone 15 Promax like new</name>
+    <category>Electronics</category>
+    <description>iPhone 15 Promax 99% like new, Excellent condition</description>
+    <startPrice>1400.00</startPrice>
+    <reservePrice>1600.00</reservePrice>
+    <buyItNowPrice>1700.00</buyItNowPrice>
+    <duration>30</duration>
+    <startDate>2025-10-25</startDate>
+    <startTime>21:50:00</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID/>
+      <price>1400.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 6: Louis Vuitton T-Shirt -->
+  <item>
+    <itemNumber>I1761389494</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>Louis Vuitton T-Shirt limited edition</name>
+    <category>Fashion</category>
+    <description>LV T-Shirt designed by a famous designer in Paris; Limited Edition</description>
+    <startPrice>2500.00</startPrice>
+    <reservePrice>2800.00</reservePrice>
+    <buyItNowPrice>3000.00</buyItNowPrice>
+    <duration>30</duration>
+    <startDate>2025-10-25</startDate>
+    <startTime>21:51:34</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID/>
+      <price>2500.00</price>
+    </currentBid>
+  </item>
+  
+  <!-- Auction Item 7: "The Pursuit Of Happiness" Book -->
+  <item>
+    <itemNumber>I1761389621</itemNumber>
+    <sellerID>C1760159668</sellerID>
+    <name>"The Pursuit Of Happiness"</name>
+    <category>Books</category>
+    <description>"The Pursuit Of Happiness" is one of the best seller of the year. The story based on a real life context.</description>
+    <startPrice>150.00</startPrice>
+    <reservePrice>180.00</reservePrice>
+    <buyItNowPrice>220.00</buyItNowPrice>
+    <duration>28</duration>
+    <startDate>2025-10-25</startDate>
+    <startTime>21:53:41</startTime>
+    <status>in_progress</status>
+    <currentBid>
+      <bidderID/>
+      <price>150.00</price>
+    </currentBid>
+  </item>
+</items>
