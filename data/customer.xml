@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: customer.xml
+ * Purpose: XML database storing all registered customer information for ShopOnline system.
+ * Structure: Contains multiple customer elements with personal and login details.
+ */
+-->
+<customers>
+    <!-- Customer 1: Primary test account -->
+    <customer>
+        <customerID>C1760159668</customerID>
+        <firstname>Huy</firstname>
+        <surname>Ho</surname>
+        <email>huybm27@gmail.com</email>
+        <password>12345</password>
+    </customer>
+    
+    <!-- Customer 2: Secondary test account -->
+    <customer>
+        <customerID>C1760679609</customerID>
+        <firstname>Cindy</firstname>
+        <surname>Ton</surname>
+        <email>cindyton@gmail.com</email>
+        <password>123456789</password>
+    </customer>
+    
+    <!-- Customer 3: Additional test account -->
+    <customer>
+        <customerID>C1760679898</customerID>
+        <firstname>Ken</firstname>
+        <surname>Hoang</surname>
+        <email>kenhoang@gmail.com</email>
+        <password>112</password>
+    </customer>
+    
+    <!-- Customer 4: Additional test account -->
+    <customer>
+        <customerID>C1761390573</customerID>
+        <firstname>Saskia</firstname>
+        <surname>Griffin</surname>
+        <email>saskia@gmail.com</email>
+        <password>113</password>
+    </customer>
+</customers>
