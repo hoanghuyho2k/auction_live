@@ -1,0 +1,283 @@
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: style.css
+ * Purpose: Main stylesheet for ShopOnline application providing consistent styling across all pages.
+ */
+
+/* ====== Global Page Layout ====== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f8f9fb;
+  color: #222;
+}
+
+/* Header styling with dark blue background and flex layout */
+header {
+  background: #003366;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { margin: 0; font-size: 1.6em; }
+
+/* Navigation bar styling */
+nav {
+  background: #004080;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content container with white background and shadow */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer styling matching header colors */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* ====== Forms ====== */
+/* Consistent form input styling */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling with hover effects */
+button, input[type="submit"] {
+  background: #0055cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #003f99;
+}
+
+/* ====== Improved Auction Grid Layout ====== */
+/* Grid layout for auction items with responsive columns */
+.auction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+/* Individual auction item box with enhanced styling */
+.auction-box {
+  border: 2px solid #e0e0e0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover effects for auction boxes */
+.auction-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-color: #0055cc;
+}
+
+/* Item number badge for sequential numbering */
+.item-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #0055cc;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Content area within auction boxes */
+.auction-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Details section with left-aligned text */
+.auction-details {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.auction-details p {
+  margin: 8px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95em;
+}
+
+.auction-details p:last-child {
+  border-bottom: none;
+}
+
+/* Strong text styling for labels */
+.auction-details strong {
+  color: #003366;
+  display: inline-block;
+  min-width: 120px;
+}
+
+/* Highlighted price styling */
+.price-highlight {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Time remaining display with warning background */
+.time-remaining {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #856404;
+}
+
+/* Button container for auction actions */
+.auction-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.auction-buttons button {
+  padding: 10px 20px;
+  font-size: 0.95em;
+  border-radius: 6px;
+  flex: 1;
+  max-width: 140px;
+  transition: all 0.2s ease;
+}
+
+/* Green bid button */
+.bid-button {
+  background: #28a745;
+}
+
+.bid-button:hover {
+  background: #218838;
+}
+
+/* Red buy button */
+.buy-button {
+  background: #dc3545;
+}
+
+.buy-button:hover {
+  background: #c82333;
+}
+
+/* Styling for ended auctions */
+.ended {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+/* Informational note styling */
+.note {
+  font-size: 0.95em;
+  color: #333;
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #0077cc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Status badges with color coding */
+.status-in-progress {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-sold {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-failed {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+/* ====== Responsive Design ====== */
+/* Mobile-friendly adjustments for smaller screens */
+@media (max-width: 768px) {
+  .auction-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .auction-box {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+}
