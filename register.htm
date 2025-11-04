@@ -1,0 +1,83 @@
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: register.htm
+ * Purpose: Registration page for new customers to create ShopOnline accounts.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Register – ShopOnline</title>
+  <!-- External CSS stylesheet for consistent application styling -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Common JavaScript file containing AJAX functions and form handlers -->
+  <script src="common.js"></script>
+</head>
+<body>
+
+<!-- Header section with application title and student ID display -->
+<header>
+  <h1>ShopOnline</h1>
+  <!-- Student ID display as required by project specifications -->
+  <div id="userInfo">Student ID: 105726741</div>
+</header>
+
+<!-- Navigation menu providing access to all major system functions -->
+<nav>
+  <a href="login.htm">Home</a>
+  <a href="listing.htm">Listing</a>
+  <a href="bidding.htm">Bidding</a>
+  <a href="maintenance.htm">Maintenance</a>
+  <a href="logout.php">Log Out</a>
+</nav>
+
+<!-- Main content container for the registration form -->
+<div class="container">
+  <h2>Register New Customer</h2>
+  <p>Please fill in your details below to create a ShopOnline account.</p>
+
+  <!-- Registration form that uses AJAX for submission -->
+  <!-- onsubmit calls registerUser() from common.js which handles validation and AJAX request -->
+  <form id="regForm" onsubmit="return registerUser();">
+    <!-- First name input field for customer information -->
+    <label>First Name:</label><br>
+    <input type="text" id="first" required><br><br>
+
+    <!-- Surname input field for customer information -->
+    <label>Surname:</label><br>
+    <input type="text" id="surname" required><br><br>
+
+    <!-- Email input field with HTML5 email validation -->
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <!-- Password input field for account security -->
+    <label>Password:</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <!-- Password confirmation field to ensure password accuracy -->
+    <label>Re-type Password:</label><br>
+    <input type="password" id="confirm" required><br><br>
+
+    <!-- Submit button to create new customer account -->
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Message area for displaying registration results and error messages -->
+  <p id="msg"></p>
+
+  <!-- Separator and login link for existing users -->
+  <hr>
+  <p>Already have an account? <button onclick="location.href='login.htm'">Go to Login</button></p>
+</div>
+
+<!-- Footer with project and student information -->
+<footer>
+  COS80021 – ShopOnline Project 2 | Hoang Huy Ho (s105726741)
+</footer>
+
+</body>
+</html>

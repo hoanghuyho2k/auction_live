@@ -1,0 +1,105 @@
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: listing.htm
+ * Purpose: Item listing page for sellers to add new auction items to ShopOnline.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Listing – ShopOnline</title>
+  <!-- External CSS for consistent styling across the application -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Common JavaScript file containing AJAX functions and form handlers -->
+  <script src="common.js"></script>
+</head>
+<body>
+
+<!-- Header section with application title and student ID display -->
+<header>
+  <h1>ShopOnline</h1>
+  <!-- Student ID display as required by project specifications -->
+  <div id="userInfo">Student ID: 105726741</div>
+</header>
+
+<!-- Navigation menu providing access to all major system functions -->
+<nav>
+  <a href="login.htm">Home</a>
+  <a href="listing.htm">Listing</a>
+  <a href="bidding.htm">Bidding</a>
+  <a href="maintenance.htm">Maintenance</a>
+  <a href="logout.php">Log Out</a>
+</nav>
+
+<!-- Main content container for the listing form -->
+<div class="container">
+  <h2>List a New Item</h2>
+  <p>Fill in the details to add a new item to the auction.</p>
+
+  <!-- Item listing form that uses AJAX for submission -->
+  <!-- onsubmit calls listItem() from common.js which handles validation and AJAX request -->
+  <form id="listForm" onsubmit="return listItem();">
+    <!-- Item name input field -->
+    <label>Item Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <!-- Category selection with predefined options and "Other" option -->
+    <label>Category:</label><br>
+    <select id="category">
+      <option value="">-- Select Category --</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+      <option value="Home">Home</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Other">Other</option>
+    </select>
+    <!-- Additional text input for custom categories when "Other" is selected -->
+    <input type="text" id="otherCat" placeholder="If Other, specify" style="display:none;"><br><br>
+
+    <!-- Item description textarea -->
+    <label>Description:</label><br>
+    <textarea id="desc" rows="4" cols="40" required></textarea><br><br>
+
+    <!-- Start price input with decimal precision -->
+    <label>Start Price ($):</label><br>
+    <input type="number" id="start" step="0.01" value="0" required><br><br>
+
+    <!-- Reserve price input (minimum price to sell the item) -->
+    <label>Reserve Price ($):</label><br>
+    <input type="number" id="reserve" step="0.01" required><br><br>
+
+    <!-- Buy-it-now price input (instant purchase price) -->
+    <label>Buy-It-Now Price ($):</label><br>
+    <input type="number" id="buy" step="0.01" required><br><br>
+
+    <!-- Auction duration in days (1-30 days as per requirements) -->
+    <label>Duration (days):</label><br>
+    <input type="number" id="duration" min="1" max="30" required><br><br>
+
+    <!-- Submit button to list the item -->
+    <button type="submit">List Item</button>
+  </form>
+
+  <!-- Message area for displaying form submission results and errors -->
+  <p id="msg"></p>
+</div>
+
+<!-- Footer with project and student information -->
+<footer>
+  COS80021 – ShopOnline Project 2 | Hoang Huy Ho (s105726741)
+</footer>
+
+<script>
+  // Event listener for category dropdown changes
+  // Shows additional text input when "Other" category is selected
+  // Allows users to specify custom categories not in the predefined list
+  document.getElementById('category').addEventListener('change',function(){
+    document.getElementById('otherCat').style.display = 
+      this.value==='Other' ? 'inline-block' : 'none';
+  });
+</script>
+</body>
+</html>

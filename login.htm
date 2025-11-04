@@ -1,0 +1,71 @@
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: login.htm
+ * Purpose: Login page for existing customers to access their ShopOnline accounts.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Login – ShopOnline</title>
+  <!-- External CSS stylesheet for consistent application styling -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Common JavaScript file containing AJAX functions and form handlers -->
+  <script src="common.js"></script>
+</head>
+<body>
+
+<!-- Header section with application title and student ID display -->
+<header>
+  <h1>ShopOnline</h1>
+  <!-- Student ID display as required by project specifications -->
+  <div id="userInfo">Student ID: 105726741</div>
+</header>
+
+<!-- Navigation menu providing access to all major system functions -->
+<nav>
+  <a href="login.htm">Home</a>
+  <a href="listing.htm">Listing</a>
+  <a href="bidding.htm">Bidding</a>
+  <a href="maintenance.htm">Maintenance</a>
+  <a href="logout.php">Log Out</a>
+</nav>
+
+<!-- Main content container for the login form -->
+<div class="container">
+  <h2>Login to Your Account</h2>
+  <p>Enter your email and password to access your ShopOnline dashboard.</p>
+
+  <!-- Login form that uses AJAX for authentication -->
+  <!-- onsubmit calls loginUser() from common.js which handles validation and AJAX request -->
+  <form id="loginForm" onsubmit="return loginUser();">
+    <!-- Email input field for user authentication -->
+    <label>Email:</label><br>
+    <input type="text" id="email" required><br><br>
+
+    <!-- Password input field for secure authentication -->
+    <label>Password:</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <!-- Submit button to initiate login process -->
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Message area for displaying login results and error messages -->
+  <p id="msg"></p>
+
+  <!-- Separator and registration link for new users -->
+  <hr>
+  <p>New to ShopOnline? <button onclick="location.href='register.htm'">Register here</button></p>
+</div>
+
+<!-- Footer with project and student information -->
+<footer>
+  COS80021 – ShopOnline Project 2 | Hoang Huy Ho (s105726741)
+</footer>
+
+</body>
+</html>

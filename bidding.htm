@@ -1,0 +1,66 @@
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: s105726741
+ * File: bidding.htm
+ * Purpose: Bidding page for customers to view and bid on auction items.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bidding – ShopOnline</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="style/style.css" />
+  <!-- Link to common JavaScript file containing AJAX functions and utilities -->
+  <script src="common.js"></script>
+</head>
+<body>
+
+<!-- Header section with site title and student ID display -->
+<header>
+  <h1>ShopOnline Auction</h1>
+  <!-- Display student ID as required by project specifications -->
+  <div id="userInfo">Student ID: 105726741</div>
+</header>
+
+<!-- Navigation menu for site navigation -->
+<nav>
+  <a href="login.htm">Home</a>
+  <a href="listing.htm">Listing</a>
+  <a href="bidding.htm">Bidding</a>
+  <a href="maintenance.htm">Maintenance</a>
+  <a href="logout.php">Log Out</a>
+</nav>
+
+<!-- Main content container -->
+<div class="container">
+  <h2>💰 Live Auctions</h2>
+  <!-- Informational note for users about bidding functionality -->
+  <p class="note">
+    🎯 Current auction items are listed below. To place a bid for an item, use the <b>Place Bid</b> button. 
+    To purchase immediately, use the <b>Buy It Now</b> button.<br>
+    ⚡ <b>NOTE:</b> Item remaining time and bid prices are updated every 5 seconds automatically.
+  </p>
+
+  <!-- Dynamic content area where auction items will be displayed -->
+  <!-- This div will be populated by JavaScript with auction data from XML -->
+  <div id="list">
+    <p>Loading current auction items...</p>
+  </div>
+</div>
+
+<!-- Footer with project and student information -->
+<footer>
+  COS80021 – ShopOnline Project 2 | Hoang Huy Ho (s105726741)
+</footer>
+
+<script>
+  // Load items immediately when page loads and then refresh every 5 seconds
+  // updateList() function is defined in common.js and uses AJAX to fetch auction data
+  updateList();
+</script>
+
+</body>
+</html>

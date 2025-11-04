@@ -1,0 +1,60 @@
+<!--
+/**
+ * Name: Hoang Huy Ho
+ * Student ID: 105726741
+ * File: maintenance.htm
+ * Purpose: Maintenance panel for processing expired auctions and generating sales reports.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Maintenance – ShopOnline</title>
+  <!-- External CSS stylesheet for consistent application styling -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Common JavaScript file containing AJAX functions and maintenance operations -->
+  <script src="common.js"></script>
+</head>
+<body>
+
+<!-- Header section with application title and student ID display -->
+<header>
+  <h1>ShopOnline</h1>
+  <!-- Student ID display as required by project specifications -->
+  <div id="userInfo">Student ID: 105726741</div>
+</header>
+
+<!-- Navigation menu providing access to all major system functions -->
+<nav>
+  <a href="login.htm">Home</a>
+  <a href="listing.htm">Listing</a>
+  <a href="bidding.htm">Bidding</a>
+  <a href="maintenance.htm">Maintenance</a>
+  <a href="logout.php">Log Out</a>
+</nav>
+
+<!-- Main content container for maintenance operations -->
+<div class="container">
+  <h2>Maintenance Panel</h2>
+  <p>Use the options below to manage auctions and reports.</p>
+
+  <!-- Maintenance function buttons -->
+  <!-- Process Auction Items: Checks expired auctions and updates their status -->
+  <button onclick="processAuctions();">Process Auction Items</button>
+  <!-- Generate Report: Creates sales report and removes sold/failed items from system -->
+  <button onclick="generateReport();">Generate Report</button>
+
+  <!-- Message area for displaying operation results and status messages -->
+  <div id="msg" style="margin-top:20px;"></div>
+  <!-- Report display area for showing generated sales reports -->
+  <div id="report" style="margin-top:20px;"></div>
+</div>
+
+<!-- Footer with project and student information -->
+<footer>
+  COS80021 – ShopOnline Project 2 | Hoang Huy Ho (s105726741)
+</footer>
+
+</body>
+</html>

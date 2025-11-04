@@ -1,0 +1,95 @@
+ShopOnline System - Project 2
+Student: Hoang Huy Ho (105726741)
+
+URL ACCESS:
+===========
+https://mercury.swin.edu.au/cos80021/s105726741/Project2/login.htm
+
+FILE LIST:
+==========
+HTML Files:
+- login.htm - User login page for existing customers
+- register.htm - User registration page for new customers
+- listing.htm - Item listing page for sellers to add auction items
+- bidding.htm - Auction bidding page to view and bid on items
+- maintenance.htm - System maintenance page for processing auctions and reports
+
+PHP Files:
+- login.php - Handle user authentication against customer XML database
+- register.php - Handle new customer registration and email confirmation
+- listing.php - Handle item listing and add to auction XML database
+- placeBid.php - Handle bid placement with validation
+- buyNow.php - Handle buy-it-now purchases
+- processAuctions.php - Process expired auctions and update statuses
+- generateReport.php - Generate sales report and remove sold/failed items
+- logout.php - Handle user logout and session cleanup
+- getAuctions.php - Get auction data in XML format for AJAX requests
+
+JavaScript Files:
+- common.js - Common AJAX functions, form handlers, and utilities
+
+Style Files:
+- style/style.css - CSS styling for consistent application appearance
+
+XSLT Files:
+- report.xsl - XSLT stylesheet for report generation and formatting
+
+Data Files (in www/data/ directory):
+- customer.xml - Customer database with user credentials
+- auction.xml - Auction items database with current listings
+- report.xml - Generated reports for sold/failed items
+
+SYSTEM INSTRUCTIONS:
+====================
+1. Start from login.htm or register.htm for new users
+2. Login with existing credentials or register new account
+3. Use Listing page to add items for auction with required details
+4. Use Bidding page to view all auction items and place bids
+5. Use Maintenance page to process expired auctions and generate reports
+6. System automatically refreshes auction data every 5 seconds on bidding page
+7. Log out when finished using the system
+
+TEST ACCOUNTS:
+==============
+1. huybm27@gmail.com / 12345
+2. cindyton@gmail.com / 123456789  
+3. kenhoang@gmail.com / 112
+4. saskia@gmail.com / 113
+
+KEY FEATURES IMPLEMENTED:
+=========================
+- User Registration & Login with XML data storage
+- Item Listing with category selection and price validation
+- Real-time Bidding with automatic refresh every 5 seconds
+- Buy It Now functionality for immediate purchases
+- Auction Processing for expired items
+- Sales Reporting with revenue calculation
+- Email confirmation for new registrations
+- Session management for user authentication
+- AJAX-based client-server communication
+- XSLT-based report generation
+
+TECHNICAL NOTES:
+================
+- All XML files are stored in www/data/ directory
+- Session management used for user authentication across pages
+- AJAX (XMLHttpRequest) used for all client-server communication
+- Email functionality for registration confirmations
+- Proper XML formatting with DOMDocument and formatOutput
+- Input validation on both client and server sides
+- Responsive design with CSS Grid and Flexbox
+- Mercury server compatible PHP code 
+
+PROJECT REQUIREMENTS MET:
+=========================
+? Task 1: Login/Registration with XML storage
+? Task 2: Item Listing with validation and XML storage  
+? Task 3: Bidding with auto-refresh and bid validation
+? Task 4: Maintenance with auction processing and reporting
+? All files properly commented with student information
+? Student ID displayed on all pages
+? XMLHttpRequest used for all communications
+? XSLT used for report generation
+? Files organized in proper directory structure
+
+
